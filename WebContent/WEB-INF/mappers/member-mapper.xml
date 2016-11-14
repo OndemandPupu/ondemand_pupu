@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="member">
 	<insert id="addMember" parameterType="java.util.HashMap">
-		insert into member values(#{id}, member_seq.nextval, #{name}, #{pass}, #{email}, #{address}, #{phone}, #{interest}, #{yyyy-mm-dd} ,#{gender}, sysdate )
+		insert into member values(#{id}, member_seq.nextval, #{name}, #{pass}, #{email}, #{address}, #{phone}, #{interest}, #{brith} ,#{gender}, sysdate )
 	</insert>
 	<insert id="addMembership" parameterType="java.lang.String">
 		insert into membership values(#{id},#{name} ,0, 1)
