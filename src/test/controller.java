@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class controller {
 	@RequestMapping("test")
 	public String test() {
-		return "testview";
+		return "joinmember";
 	}
 }

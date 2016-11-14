@@ -15,7 +15,7 @@
 	<context:component-scan base-package="test"></context:component-scan>
 	<mvc:annotation-driven />
 <!--  -->
-	<!-- 스프링 컨테이너 및 타일즈 빈등록 -->
+	<!-- 스프링 컨테이너 및 타일즈 빈등록 
 	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver"
 		id="beanNameViewResolver" p:order="1" />
 	<bean class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"
@@ -28,6 +28,7 @@
 			</list>
 		</property>
 	</bean>
+	-->
 	<!-- 디비연결에 필요한 빈등록 -->
 	<bean class="org.apache.tomcat.jdbc.pool.DataSource" id="ds">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />

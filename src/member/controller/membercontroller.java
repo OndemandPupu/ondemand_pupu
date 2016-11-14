@@ -20,7 +20,7 @@ public class membercontroller {
 	@Autowired
 	JoinMemberService joinmemberservice;
 
-	@RequestMapping()
+	@RequestMapping("/member/join")
 	public ModelAndView joinmember(HttpServletRequest req) {
 		ModelAndView mav = new ModelAndView();
 
